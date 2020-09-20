@@ -13,7 +13,6 @@ const convertText2Slug = (title) => {
   slug = slug.replace(/ý|ỳ|ỷ|ỹ|ỵ/gi, "y");
   slug = slug.replace(/đ/gi, "d");
   slug = slug.replace(/ /gi, "-");
-  slug = "@" + slug + "@";
   return slug;
 };
 

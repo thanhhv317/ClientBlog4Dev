@@ -25,13 +25,13 @@ class HelmetMetaData extends Component {
     let image =
       this.props.image !== undefined
         ? this.props.image
-        : domain + "/public/gallery/anh-16.jpg";
+        : domain + "public/gallery/anh-16.jpg";
     let description =
       this.props.description !== undefined
         ? this.props.description
         : "Nếu bạn là một lập trình viên thì tôi dám chắc chắn bạn cũng đã biết điều này: công nghệ thay đổi và những gì bạn biết ngày hôm nay có thể không còn được sử dụng 1 tháng sau đó. Vì vậy việc cập nhật các công nghệ mới là điều hết sức cần thiết cho các lập trình viên.";
     let hashtag =
-      this.props.hashtag !== undefined ? this.props.hashtag : "#blogHT";
+      this.props.hashtag !== undefined ? this.props.hashtag : "#bloght";
     this.setState({
       currentUrl,
       quote,
