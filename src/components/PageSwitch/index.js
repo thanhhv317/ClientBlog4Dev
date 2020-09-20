@@ -6,9 +6,9 @@ import Header from "../Header";
 import PostDetail from "./../PostDetail";
 import Category from "../Category";
 import CategoryPost from "../Category/CateogryPost";
+import PageNotFound from "../404";
 
 class PageSwitch extends Component {
-
   render() {
     return (
       <div>
@@ -16,8 +16,8 @@ class PageSwitch extends Component {
           <Route exact path="/">
             <Header
               background="assets/img/home-bg.jpg"
-              title="BlogMT-javascript "
-              content=""
+              title=""
+              content="BlogHT - Chia sẻ là sức mạnh"
             />
             <Home />
           </Route>
@@ -32,11 +32,14 @@ class PageSwitch extends Component {
           <Route exact path="/category">
             <Category />
           </Route>
-          <Route path="/category/:slug">
+          <Route exact path="/category/:slug">
             <CategoryPost />
           </Route>
-          <Route path="/post/:slug">
+          <Route exact path="/post/:slug">
             <PostDetail />
+          </Route>
+          <Route path="*">
+            <PageNotFound />
           </Route>
         </Switch>
       </div>
