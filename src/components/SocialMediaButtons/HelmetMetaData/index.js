@@ -17,6 +17,7 @@ class HelmetMetaData extends Component {
 
   componentDidMount() {
     let currentUrl = window.location.href;
+    console.log("helmet", currentUrl);
     let quote = this.props.quote !== undefined ? this.props.quote : "";
     let title =
       this.props.title !== undefined
