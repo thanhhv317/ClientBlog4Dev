@@ -5,7 +5,8 @@ import { domain } from "../../utils/config";
 import Comment from "../Comment";
 import ListComment from "../Comment/ListComment";
 import SocialMediaButtons from "../SocialMediaButtons/FacebookShare";
-import PageNotFound from '../404';
+import PageNotFound from "../404";
+import HelmetMetaData from "../SocialMediaButtons/HelmetMetaData";
 
 class PostDetail extends Component {
   constructor(props) {
@@ -76,13 +77,17 @@ class PostDetail extends Component {
         </div>
       );
     } else {
-      if (items ===undefined) {
-        return (
-          <PageNotFound />
-        )
+      if (items === undefined) {
+        return <PageNotFound />;
       }
       return (
         <div>
+          <HelmetMetaData
+            title={items.title}
+            image={items.thumbnail}
+            description={items.content.replace(/<[^>]*>/g, "").substr(0, 120) + "..."}
+
+          ></HelmetMetaData>
           <div>
             <PostHeader
               title={items.title}
