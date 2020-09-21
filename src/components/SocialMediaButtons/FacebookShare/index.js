@@ -15,7 +15,6 @@ class SocialMediaButtons extends Component {
   }
   render() {
     const { href } = this.state;
-    console.log(href);
     return (
       <FacebookShareButton
         url={href}

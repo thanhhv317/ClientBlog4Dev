@@ -5,6 +5,7 @@ import { domain } from "../../utils/config";
 import Comment from "../Comment";
 import ListComment from "../Comment/ListComment";
 import SocialMediaButtons from "../SocialMediaButtons/FacebookShare";
+import PageNotFound from '../404';
 
 class PostDetail extends Component {
   constructor(props) {
@@ -52,6 +53,7 @@ class PostDetail extends Component {
 
   render() {
     const { isLoaded, items, error, postId } = this.state;
+    console.log(items)
     if (error) {
       return (
         <div>
@@ -75,6 +77,11 @@ class PostDetail extends Component {
         </div>
       );
     } else {
+      if (items ===undefined) {
+        return (
+          <PageNotFound />
+        )
+      }
       return (
         <div>
           <div>

@@ -17,7 +17,6 @@ class HelmetMetaData extends Component {
 
   componentDidMount() {
     let currentUrl = window.location.href;
-    console.log("helmet", currentUrl);
     let quote = this.props.quote !== undefined ? this.props.quote : "";
     let title =
       this.props.title !== undefined
@@ -25,7 +24,7 @@ class HelmetMetaData extends Component {
         : "BlogHT - Chia sẻ kiến thức";
     let image =
       this.props.image !== undefined
-        ? this.props.image
+        ? domain + this.props.image
         : domain + "public/gallery/anh-16.jpg";
     let description =
       this.props.description !== undefined
