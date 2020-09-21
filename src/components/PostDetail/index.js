@@ -53,7 +53,6 @@ class PostDetail extends Component {
 
   render() {
     const { isLoaded, items, error, postId } = this.state;
-    console.log(items)
     if (error) {
       return (
         <div>
