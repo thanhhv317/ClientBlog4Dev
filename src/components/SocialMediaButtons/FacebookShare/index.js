@@ -20,6 +20,7 @@ class SocialMediaButtons extends Component {
         url={href}
         quote={"BlogHT - Chia sẻ kiến thức"}
         hashtag="#HTBlog"
+        
       >
         <FacebookIcon size={36} />
       </FacebookShareButton>
