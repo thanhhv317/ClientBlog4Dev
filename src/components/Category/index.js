@@ -47,6 +47,11 @@ class Category extends Component {
     if (error) {
       return (
         <div className="animation-area">
+          <Header
+            background="assets/img/category.png"
+            title="Thể loại"
+            content=""
+          />
           <div className="container">
             <div className="row">
               <div className="col-12">
@@ -59,6 +64,11 @@ class Category extends Component {
     } else if (!isLoaded) {
       return (
         <div>
+          <Header
+            background="assets/img/category.png"
+            title="Thể loại"
+            content=""
+          />
           <div className="container">
             <div className="row">
               <div className="col-lg-12 col-md-12 mx-auto">
