@@ -16,7 +16,7 @@ class Item extends Component {
         <div className="media-body">
           <div className="media-heading">
             <div className="user-comment">{item.name}</div>
-            <span className="time">{moment(item.createAt).format('hh:mm - MM/DD/YYYY')}</span>
+            <span className="time">{moment(item.createdAt).format('hh:mm - MM/DD/YYYY')}</span>
           </div>
           <div className="content-comment">{item.comment}</div>
         </div>

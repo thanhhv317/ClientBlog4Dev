@@ -18,7 +18,7 @@ class PostItem extends Component {
           <p className="post-meta">
             Đăng bởi
             <b> {post.authorId.username} </b>
-            lúc {moment(post.createAt).format('hh:mm DD/MM/YYYY')}
+            lúc {moment(post.createdAt).format('hh:mm DD/MM/YYYY')}
           </p>
         </div>
         <hr />

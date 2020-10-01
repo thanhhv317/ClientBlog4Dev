@@ -19,7 +19,7 @@ class PostDetail extends Component {
     };
   }
 
-  componentDidMount() {
+  componentWillMount() {
     const href = window.location.href;
     const id = href.substring(href.lastIndexOf(".") + 1, href.length);
     this.setState({
@@ -92,7 +92,7 @@ class PostDetail extends Component {
             <PostHeader
               title={items.title}
               author={items.authorId.username}
-              createdDate={items.createAt}
+              createdDate={items.createdAt}
               image={items.thumbnail}
             />
             <Post
