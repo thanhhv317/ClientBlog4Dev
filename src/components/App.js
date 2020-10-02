@@ -11,7 +11,7 @@ function App() {
   return (
     <Router>
       <div>
-        {/* <HelmetMetaData/> */}
+        <HelmetMetaData/>
         <Nav />
         <BackToTop />
         <PageSwitch />
