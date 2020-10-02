@@ -17,7 +17,7 @@ class SocialMediaButtons extends Component {
     const { href } = this.state;
     return (
       <FacebookShareButton
-        url="https://htblog.tech/post/tim-hieu-promise-trong-javascript.5f75e57cefdb7c34dc14c336"
+        url={href}
         quote={"BlogHT - Chia sẻ kiến thức"}
         hashtag="#HTBlog"
       >
