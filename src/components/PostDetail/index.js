@@ -85,8 +85,9 @@ class PostDetail extends Component {
           <HelmetMetaData
             title={items.title}
             image={`${domain}${items.thumbnail}`}
-            description={items.content.replace(/<[^>]*>/g, "").substr(0, 120) + "..."}
-
+            description={
+              items.content.replace(/<[^>]*>/g, "").substr(0, 120) + "..."
+            }
           ></HelmetMetaData>
           <div>
             <PostHeader

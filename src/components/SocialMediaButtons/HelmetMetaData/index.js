@@ -21,7 +21,7 @@ class HelmetMetaData extends Component {
     let title =
       this.props.title !== undefined
         ? this.props.title
-        : "BlogHT - Chia sẻ kiến thức";
+        : "BlogHT - Chia sẻ là sức mạnh";
     let image =
       this.props.image !== undefined
         ? domain + this.props.image
@@ -72,7 +72,6 @@ class HelmetMetaData extends Component {
         <meta property="quote" content={quote} />
         <meta name="description" content={description} />
         <meta property="image" content={image} />
-        <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content={title} />
         <meta property="og:quote" content={quote} />
@@ -80,7 +79,7 @@ class HelmetMetaData extends Component {
         <meta property="og:image" content={image} />
         <meta content="image/*" property="og:image:type" />
         <meta property="og:url" content={currentUrl} />
-        <meta property="og:site_name" content="CampersTribe" />
+        <meta property="og:site_name" content="HTBlog" />
         <meta property="og:description" content={description} />{" "}
       </Helmet>
     );
