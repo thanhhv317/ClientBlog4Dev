@@ -1,8 +1,9 @@
 import React from "react";
-import ReactDOM from "react-dom";
+// import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./components/App";
 import * as serviceWorker from "./serviceWorker";
+import { render } from 'react-snapshot';
 
 import { transitions, positions, Provider as AlertProvider } from "react-alert";
 import AlertTemplate from "react-alert-template-basic";
@@ -17,7 +18,8 @@ const options = {
   transition: transitions.SCALE,
 };
 
-ReactDOM.render(
+// ReactDOM.render(
+  render(
   <AlertProvider template={AlertTemplate} {...options}>
     <App />
   </AlertProvider>,
