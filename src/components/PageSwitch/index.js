@@ -15,15 +15,15 @@ class PageSwitch extends Component {
         <Switch>
           <Route exact path="/">
             <Header
-              background="assets/img/home-bg.jpg"
-              title=""
-              content="BlogHT - Chia sẻ là sức mạnh"
+              background="assets/img/alo2.jpg"
+              title="BlogHT "
+              content=" Chia sẻ là sức mạnh"
             />
             <Home />
           </Route>
           <Route exact path="/about">
             <Header
-              background="assets/img/about.jpg"
+              background="assets/img/alo4.jpg"
               title="About me"
               content=""
             />

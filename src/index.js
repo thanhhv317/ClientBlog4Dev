@@ -12,18 +12,16 @@ const options = {
   // you can also just use 'bottom center'
   position: positions.BOTTOM_RIGHT,
   timeout: 5000,
-  offset: '30px',
+  offset: "30px",
   // you can also just use 'scale'
-  transition: transitions.SCALE
-}
+  transition: transitions.SCALE,
+};
 
 ReactDOM.render(
-  <React.StrictMode>
-    <AlertProvider template={AlertTemplate} {...options}>
+  <AlertProvider template={AlertTemplate} {...options}>
     <App />
-    </AlertProvider>
-  </React.StrictMode>,
-  document.getElementById('root')
+  </AlertProvider>,
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change

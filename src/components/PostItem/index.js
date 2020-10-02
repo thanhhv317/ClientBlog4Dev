@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-import {  Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import moment from "moment";
 
 class PostItem extends Component {
-
   render() {
     const { post } = this.props;
     return (
@@ -12,13 +11,18 @@ class PostItem extends Component {
           <Link to={`/post/${post.slug}.${post._id}`}>
             <h2 className="post-title">{post.title}</h2>
             <h3 className="post-subtitle">
-              {post.content.replace(/<[^>]*>/g, "").substr(0, 120) + "..."}
+              <div
+                className="normal-text"
+                dangerouslySetInnerHTML={{
+                  __html: post.content.substr(0, 200) + "...",
+                }}
+              ></div>
             </h3>
           </Link>
           <p className="post-meta">
             Đăng bởi
             <b> {post.authorId.username} </b>
-            lúc {moment(post.createdAt).format('hh:mm DD/MM/YYYY')}
+            lúc {moment(post.createdAt).format("hh:mm DD/MM/YYYY")}
           </p>
         </div>
         <hr />

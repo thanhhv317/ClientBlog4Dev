@@ -48,7 +48,7 @@ class Category extends Component {
       return (
         <div className="animation-area">
           <Header
-            background="assets/img/category.png"
+            background="assets/img/alo3.jpg"
             title="Thể loại"
             content=""
           />
@@ -65,7 +65,7 @@ class Category extends Component {
       return (
         <div>
           <Header
-            background="assets/img/category.png"
+            background="assets/img/alo3.jpg"
             title="Thể loại"
             content=""
           />
@@ -82,7 +82,7 @@ class Category extends Component {
       return (
         <div>
           <Header
-            background="assets/img/category.png"
+            background="assets/img/alo3.jpg"
             title="Thể loại"
             content=""
           />
