@@ -19,7 +19,7 @@ class PostDetail extends Component {
     };
   }
 
-  componentWillMount() {
+  componentDidMount() {
     const href = window.location.href;
     const id = href.substring(href.lastIndexOf(".") + 1, href.length);
     this.setState({
