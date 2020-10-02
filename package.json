@@ -18,6 +18,17 @@
     "react-share": "^4.2.1",
     "save": "^2.4.0"
   },
+  "reactSnapshot": {
+    "include": [
+      "/other-path",
+      "/another/nested-path"
+    ],
+    "exclude": [
+      "/signup",
+      "/other-path/exclude-me/**"
+    ],
+    "snapshotDelay": 300
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build && react-snapshot",
